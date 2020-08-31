@@ -1,0 +1,65 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+require("antd/lib/tooltip/style");
+
+var _tooltip = _interopRequireDefault(require("antd/lib/tooltip"));
+
+var _icons = require("@ant-design/icons");
+
+var _react = _interopRequireDefault(require("react"));
+
+var _index = require("./index");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var baseClassName = 'ant-pro-setting-drawer-block-checbox';
+
+var BlockCheckbox = function BlockCheckbox(_ref) {
+  var value = _ref.value,
+      onChange = _ref.onChange,
+      propsList = _ref.list;
+  var formatMessage = (0, _index.getFormatMessage)();
+  var list = propsList || [{
+    key: 'sidemenu',
+    url: 'https://gw.alipayobjects.com/zos/antfincdn/XwFOFbLkSM/LCkqqYNmvBEbokSDscrm.svg',
+    title: formatMessage({
+      id: 'app.setting.sidemenu'
+    })
+  }, {
+    key: 'topmenu',
+    url: 'https://gw.alipayobjects.com/zos/antfincdn/URETY8%24STp/KDNDBbriJhLwuqMoxcAr.svg',
+    title: formatMessage({
+      id: 'app.setting.topmenu'
+    })
+  }];
+  return _react.default.createElement("div", {
+    className: baseClassName,
+    key: value
+  }, list.map(function (item) {
+    return _react.default.createElement(_tooltip.default, {
+      title: item.title,
+      key: item.key
+    }, _react.default.createElement("div", {
+      className: "".concat(baseClassName, "-item"),
+      onClick: function onClick() {
+        return onChange(item.key);
+      }
+    }, _react.default.createElement("img", {
+      src: item.url,
+      alt: item.key
+    }), _react.default.createElement("div", {
+      className: "".concat(baseClassName, "-selectIcon"),
+      style: {
+        display: value === item.key ? 'block' : 'none'
+      }
+    }, _react.default.createElement(_icons.CheckOutlined, null))));
+  }));
+};
+
+var _default = BlockCheckbox;
+exports.default = _default;
