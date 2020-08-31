@@ -1,5 +1,5 @@
 // @ts-nocheck
-import { createHashHistory } from '/Users/asta/digitech/ReferralFrontend/dashboard/node_modules/@umijs/runtime';
+import { createBrowserHistory } from '/Users/asta/digitech/FE-Customer-Referral/Portal-Customer/node_modules/@umijs/runtime';
 
 let options = {
   "basename": "/"
@@ -9,10 +9,10 @@ if ((<any>window).routerBase) {
 }
 
 // remove initial history because of ssr
-let history: any = process.env.__IS_SERVER ? null : createHashHistory(options);
+let history: any = process.env.__IS_SERVER ? null : createBrowserHistory(options);
 export const createHistory = (hotReload = false) => {
   if (!hotReload) {
-    history = createHashHistory(options);
+    history = createBrowserHistory(options);
   }
 
   return history;

@@ -6,10 +6,10 @@ import { EffectsCommandMap, SubscriptionAPI } from 'dva';
 import { match } from 'react-router-dom';
 import { Location, LocationState, History } from 'history';
 
-export * from '/Users/asta/digitech/ReferralFrontend/dashboard/src/models/customer';
-export * from '/Users/asta/digitech/ReferralFrontend/dashboard/src/models/invitation';
-export * from '/Users/asta/digitech/ReferralFrontend/dashboard/src/models/referral';
-export * from '/Users/asta/digitech/ReferralFrontend/dashboard/src/models/reward';
+export * from '/Users/asta/digitech/FE-Customer-Referral/Portal-Customer/src/models/customer';
+export * from '/Users/asta/digitech/FE-Customer-Referral/Portal-Customer/src/models/invitation';
+export * from '/Users/asta/digitech/FE-Customer-Referral/Portal-Customer/src/models/referral';
+export * from '/Users/asta/digitech/FE-Customer-Referral/Portal-Customer/src/models/reward';
 
 export interface Action<T = any> {
   type: T

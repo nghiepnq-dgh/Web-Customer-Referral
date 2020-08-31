@@ -1,6 +1,6 @@
 // @ts-nocheck
 /**
- * Base on https://github.com/umijs//Users/asta/digitech/ReferralFrontend/dashboard/node_modules/umi-request
+ * Base on https://github.com/umijs//Users/asta/digitech/FE-Customer-Referral/Portal-Customer/node_modules/umi-request
  */
 import {
   extend,
@@ -13,14 +13,14 @@ import {
   RequestResponse,
   RequestInterceptor,
   ResponseInterceptor,
-} from '/Users/asta/digitech/ReferralFrontend/dashboard/node_modules/umi-request';
+} from '/Users/asta/digitech/FE-Customer-Referral/Portal-Customer/node_modules/umi-request';
 // @ts-ignore
 
 import { ApplyPluginsType } from 'umi';
 import { history, plugin } from '../core/umiExports';
             
 import { message, notification } from 'antd';
-import useUmiRequest from '/Users/asta/digitech/ReferralFrontend/dashboard/node_modules/@umijs/use-request';
+import useUmiRequest from '/Users/asta/digitech/FE-Customer-Referral/Portal-Customer/node_modules/@umijs/use-request';
 import {
   BaseOptions,
   BasePaginatedOptions,
@@ -36,7 +36,7 @@ import {
   PaginatedOptionsWithFormat,
   PaginatedParams,
   PaginatedResult,
-} from '/Users/asta/digitech/ReferralFrontend/dashboard/node_modules/@umijs/use-request/lib/types';
+} from '/Users/asta/digitech/FE-Customer-Referral/Portal-Customer/node_modules/@umijs/use-request/lib/types';
 
 type ResultWithData<T = any> = { data: T; [key: string]: any };
 

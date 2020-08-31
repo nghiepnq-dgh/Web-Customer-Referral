@@ -3,7 +3,7 @@ import { Component } from 'react';
 import { ApplyPluginsType } from 'umi';
 import dva from 'dva';
 // @ts-ignore
-import createLoading from '/Users/asta/digitech/ReferralFrontend/dashboard/node_modules/dva-loading/dist/index.esm.js';
+import createLoading from '/Users/asta/digitech/FE-Customer-Referral/Portal-Customer/node_modules/dva-loading/dist/index.esm.js';
 import { plugin, history } from '../core/umiExports';
 
 let app:any = null;
@@ -28,10 +28,10 @@ export function _onCreate(options = {}) {
   (runtimeDva.plugins || []).forEach((plugin:any) => {
     app.use(plugin);
   });
-  app.model({ namespace: 'customer', ...(require('/Users/asta/digitech/ReferralFrontend/dashboard/src/models/customer.tsx').default) });
-app.model({ namespace: 'invitation', ...(require('/Users/asta/digitech/ReferralFrontend/dashboard/src/models/invitation.tsx').default) });
-app.model({ namespace: 'referral', ...(require('/Users/asta/digitech/ReferralFrontend/dashboard/src/models/referral.tsx').default) });
-app.model({ namespace: 'reward', ...(require('/Users/asta/digitech/ReferralFrontend/dashboard/src/models/reward.tsx').default) });
+  app.model({ namespace: 'customer', ...(require('/Users/asta/digitech/FE-Customer-Referral/Portal-Customer/src/models/customer.tsx').default) });
+app.model({ namespace: 'invitation', ...(require('/Users/asta/digitech/FE-Customer-Referral/Portal-Customer/src/models/invitation.tsx').default) });
+app.model({ namespace: 'referral', ...(require('/Users/asta/digitech/FE-Customer-Referral/Portal-Customer/src/models/referral.tsx').default) });
+app.model({ namespace: 'reward', ...(require('/Users/asta/digitech/FE-Customer-Referral/Portal-Customer/src/models/reward.tsx').default) });
   return app;
 }
 

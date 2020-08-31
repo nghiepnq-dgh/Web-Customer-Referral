@@ -185,7 +185,6 @@ export interface IConfigFromPlugins {
     exclude?: string[];
   };
   ProBlockOption?: string;
-  analytics?: {};
   antd?: {
     dark?: boolean;
     compact?: boolean;

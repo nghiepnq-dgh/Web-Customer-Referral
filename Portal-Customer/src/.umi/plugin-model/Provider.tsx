@@ -1,13 +1,13 @@
 // @ts-nocheck
 import React from 'react';
-import initialState from '/Users/asta/digitech/ReferralFrontend/dashboard/src/.umi/plugin-initial-state/models/initialState';
+import initialState from '/Users/asta/digitech/FE-Customer-Referral/Portal-Customer/src/.umi/plugin-initial-state/models/initialState';
 
 // @ts-ignore
-import Dispatcher from '/Users/asta/digitech/ReferralFrontend/dashboard/node_modules/@umijs/plugin-model/lib/helpers/dispatcher';
+import Dispatcher from '/Users/asta/digitech/FE-Customer-Referral/Portal-Customer/node_modules/@umijs/plugin-model/lib/helpers/dispatcher';
 // @ts-ignore
-import Executor from '/Users/asta/digitech/ReferralFrontend/dashboard/node_modules/@umijs/plugin-model/lib/helpers/executor';
+import Executor from '/Users/asta/digitech/FE-Customer-Referral/Portal-Customer/node_modules/@umijs/plugin-model/lib/helpers/executor';
 // @ts-ignore
-import { UmiContext } from '/Users/asta/digitech/ReferralFrontend/dashboard/node_modules/@umijs/plugin-model/lib/helpers/constant';
+import { UmiContext } from '/Users/asta/digitech/FE-Customer-Referral/Portal-Customer/node_modules/@umijs/plugin-model/lib/helpers/constant';
 
 export const models = { '@@initialState': initialState,  };
 
